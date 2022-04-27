@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+
+    <UseWindowsForms>True</UseWindowsForms>
+
+    <ApplicationIcon>Icon4.ico</ApplicationIcon>
+
+    <PackageIcon>CdDrive.png</PackageIcon>
+
+    <Copyright>©2022™T©ReMeTaL</Copyright>
+
+    <Configurations>Debug;Release;Pub</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Icon4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.6.0" />
+    <PackageReference Include="Microsoft.ML.Vision" Version="1.6.0" />
+    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="1.6.0" />
+    <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.1" />
+  </ItemGroup>
+  <ItemGroup Label="SentimentModel">
+    <None Include="G:\My Drive\Pictures\ToReMeTaL Icons\CdDrive.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="SentimentModel.consumption.cs">
+      <DependentUpon>SentimentModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="SentimentModel.training.cs">
+      <DependentUpon>SentimentModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="SentimentModel.zip">
+      <DependentUpon>SentimentModel.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
