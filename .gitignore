@@ -177,7 +177,11 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-publish/
+# publish/
+SentimentModel_ConsoleApp1/
+SentimentModel_ConsoleApp2/
+SentimentModel_WebApi1/
+SentimentModel_WebApi2/
 
 # Publish Web Output
 *.[Pp]ublish.xml
