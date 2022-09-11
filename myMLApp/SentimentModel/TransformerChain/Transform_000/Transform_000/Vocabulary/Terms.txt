@@ -1,8 +1,0 @@
-# Number of terms = 7
-0	Darby
-1	David
-2	family
-3	Katelyn
-4	Katrina
-5	other
-6	Sheena
